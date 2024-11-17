@@ -1,6 +1,6 @@
 namespace TransactionalCustomerComms.Components.Sources.DataObjects;
 
-public class OrderAddress()
+public class OrderAddress
 {
     
     public required string FirstName { get; set; }
@@ -14,6 +14,9 @@ public class OrderAddress()
     public required string Country { get; set; }
     public required string Phone { get; set; }
     public required string Email { get; set; }
-    
-    public string GetFullName() => $"{FirstName} {LastName}";
+
+    public string GetFullName()
+    {
+        return $"{FirstName} {LastName}";
+    }
 }
